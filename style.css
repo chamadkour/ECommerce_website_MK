@@ -1,0 +1,297 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+/* Logo */
+.logo{
+  width: 75px;
+  height:auto;
+  float:left;
+}
+/* Header */
+header {
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color:#FDF1F1 ;
+  box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top:0;
+  left:0;
+}
+#navbar {
+  display: flex;
+  align-items : center;
+  justify-content: center;
+}
+#navbar li{
+  list-style:none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: #A58193 ;
+}
+
+#navbarli a.active::after,
+#navbar li a:hover::after {
+  content: '';
+  width:35%;
+  height: 2px;
+  background : #A58193;
+  position: absolute;
+  bottom : -4px;
+  left: 20px;
+}
+
+/*First page*/
+#hero {
+  background-image : url("sachome.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding : 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#hero h4{
+  padding-bottom: 15px;
+  color: #381A38;
+  
+}
+#hero h2{
+  color: #381A38;
+  padding-bottom: 15px;
+ 
+}
+
+#hero button{
+  background: #381A38;
+  border-radius: 999px;
+  box-shadow: #381A38 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+/*Products on homepage*/
+#product1 {
+  padding-top: 15px;
+  text-align: center;
+}
+#product1 h1{
+  font-size: 40px;
+  color :rgba(0, 0, 0, 0.9);
+}
+
+#product1 p{
+  color: grey;
+  font-size: 12px;
+}
+#product1 .products{
+  width: 31%;
+  min-width: 250px;
+  padding:10px 12px;
+  border : 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  margin: 15px;
+}
+#product1 .products img{
+  width: 100%;
+  border-radius: 20px;
+}
+.container1{
+  position : relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#product1 .products span{
+  color: grey;
+  font-size: 12px;
+
+}
+#product1 .products h5{
+  color: #6E2E44;
+}
+/*Categories on Homepage*/
+#category h1{
+  font-size: 40px;
+  color :rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+#category .categories{
+  position : relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 380px;
+  width: 31%;
+  min-width: 250px;
+  padding:10px 12px;
+  border : 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  margin: 15px;
+}
+#category .categories img{
+  width: 70%;
+  height: auto;
+  display : flex;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  
+}
+#category .explr{
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+  
+#category .explr:hover{
+  background-color: #16437E;
+  color: #ffffff;
+}
+form fieldset h2 {
+  text-align: center;
+  padding-top: 15px;
+}
+fieldset {
+  padding-top: 50px;
+  margin-top: 15px;
+  text-align: center;
+  justify-content: left;
+  border-style: none;
+  
+}
+
+/*Contact page*/
+#contact #sendbtn {
+  background: #381A38;
+  border-radius: 999px;
+  box-shadow: #381A38 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+/*Footer styling*/
+
+.footer {
+  padding: 75px 0 0;
+  background-color: #080708;
+  position: relative;
+  z-index: 2; }
+   .footer-logo img{
+    width: 150px;
+   }
+.footer .contact-us {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 80px; }
+T.footer .contact-us .contact-info {
+      margin-left: 50px; }
+    .footer .contact-us.contact-us-last {
+      margin-left: -80px; }
+  .footer .contact-icon i {
+    font-size: 24px;
+    top: -15px;
+    position: relative;
+    color:#007bff; }
+
+.footer-box-info {
+  top: -122px;
+  background: #FDF1F1;
+  padding: 40px;
+  z-index: 2; }
+  .footer-box-info .social-link{
+ justify-content: center;
+ position: relative;
+ display: inline;
+}
+  .footer-box-info .social-link h3 {
+    color: #6E2E44;
+    font-size: 24px;
+    margin-bottom: 25px; }
+  .footer-box-info .social-link ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .footer-box-info .social-link li {
+    display: inline-block; }
+  .footer-box-info .social-link a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff; }
+    .footer-box-info .social-link a i.fa-facebook {
+      background-color: #3B5998; }
+    .footer-box-info .social-link a i.fa-whatsapp {
+      background-color: #087919; }
+    .footer-box-info .social-link a i.fa-instagram {
+      background-color: #B7242A; }

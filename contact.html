@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Maison Kamy
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <a href="Homepage.html" ><img src="kamy_s_logo-1-removebg-preview.png" class="logo" alt="Maison Kamy"></a>
+        <nav>
+            <ul id="navbar">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="shop.html">Shop</a> </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart </a></li>
+            </ul> 
+        </nav> 
+    </header>
+    <form id="contact" action="formHandler.php" method="post" onsubmit="verification()">
+        <fieldset>
+            <h1 style="padding: 30px; color: #381A38 ;">Contact us :</h1>
+            <p><label style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(58, 55, 55); font-size: larger; padding-bottom: 20px;" >First Name:</label>
+                <input name="name" type="text" id="nom" style="border-top : none; border-right: none; border-left: none; "> </p>
+            <p><label style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(58, 55, 55); font-size: larger; padding-bottom: 20px;">Email Address:</label> 
+                <input style="cursor: pointer; border-top : none; border-right: none; border-left: none;" name="email" type="text" id="email" ></p>
+            <p><label style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(58, 55, 55); font-size: larger; padding-bottom: 20px;">Message:</label> 
+                 <input style="border-top : none; border-right: none; border-left: none;" type="text" size="150" id="msg" name="message" > </p>
+            <p><input id="sendbtn" type="submit" value="Send" /></p>
+        </fieldset>
+    </form>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <footer id="footer" >
+        <div class="container">
+            <div class="footer-box-info">
+                <a href="Homepage.html" class="footer-logo">
+                    <img src="kamy_s_logo-1-removebg-preview.png" alt="footer_logo">
+                </a>
+                <div class="social-link">
+                    <h3>Follow us</h3>
+                    <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script TYPE="text/javascript" src="monscript.js">
+</script>
+    </body>
+</html>
